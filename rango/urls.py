@@ -1,6 +1,7 @@
 from django.urls import path
 from rango import views
 
+
 app_name = 'rango'
 
 urlpatterns = [
@@ -13,5 +14,5 @@ urlpatterns = [
     path('login/', views.user_login, name='login'),
     path('restricted/', views.restricted, name='restricted'),
     path('logout/', views.user_logout, name='logout'),
-    path('movielist/', views.show_movies, name='show_movies'),
+    path('movielist/', views.show_movies,name='movie_mini'),
 ]
